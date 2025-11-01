@@ -745,6 +745,8 @@ footer {
     align-items: start;
     padding-left: 108px;
     justify-content: start;
+            row-gap: 72px;
+              column-gap: 24px;
   }
   .footer-text {
     width: 264px;
@@ -763,17 +765,21 @@ footer {
   }
   .subscribe-mail {
     flex-direction: row;
-    column-gap: 72px;
-    row-gap: 24px;
+    gap: 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .footer-container {
     flex-wrap: nowrap;
     padding: 0 15px;
+    gap: 0;
+  }
+  .footer-socials{
+    margin-right: 80px;
   }
   .logo-container {
     margin-bottom: 0;
+    margin-right: 120px;
   }
   .footer-logo {
     display: inline-block;
@@ -1043,7 +1049,8 @@ footer {
 }
 .mobile-butn {
   border-radius: 50%;
-  border: transparent;
+  border: 1px solid #e7e9fc;
+  background: transparent;
   width: 28px;
   height: 28px;
   position: absolute;
